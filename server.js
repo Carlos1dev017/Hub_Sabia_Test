@@ -26,9 +26,6 @@ app.get('/', (req, res) => {
     res.send('API do HubSabia está no ar!');
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
-
 const corsOptions = {
     origin: 'https://hub-sabia-front.vercel.app/' // A URL que a Vercel te deu
 };
